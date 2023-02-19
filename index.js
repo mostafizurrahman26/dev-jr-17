@@ -1,6 +1,6 @@
 
 // change color on mouseHover
-function mouseOver() {
+function mouseOverChangeColor() {
     const cards = document.getElementsByClassName( 'card' );
     for ( let card of cards ) {
         const randomColor ='#'+ Math.floor( Math.random() * 16777215 ).toString( 16 );
@@ -10,7 +10,7 @@ function mouseOver() {
 }
 // blog button event
 function blogBtn(){
-    location.href = 'blog.html';
+    window.location.href = 'open-other-page.html';
 }
 
 
