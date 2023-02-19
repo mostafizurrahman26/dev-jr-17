@@ -9,7 +9,7 @@
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="m-4 max-w-7xl mx-auto">
-    
+
 <!-- navbar section  Area -->
     <header class="my-12">
         <div class="navbar md:flex bg-base-100 w-full rounded-lg bg-slate-200 md:px-10 py-5">
@@ -17,12 +17,33 @@
                 <p class="normal-case text-5xl font-bold">Interactive <br>
                     <span class="text-2xl">Geometry Genius</span>
                 </p>
-            </div>
-            <div class="navbar-end">
+                </div>
+                 <div class="navbar-end">
                 <a onclick="btnBlog()" id="btn-blog" class="btn bg-[#1090D8]  border-blue-500 normal-case">Blog</a>
             </div>
         </div>
     </header>
+<!-- main section Area -->
+<main>
+ <section class="lg:flex gap-3 mx-auto w-full h-auto">
+
+    <!-- Area of Rectangle Card -->
+    <div  class="card w-full py-6 px-4 h-auto">
+        <figure><img src="images/triangle.png" alt="Triangle" /></figure>
+        <div class="card-body">
+            <h2 id="triangle-title" class="card-title mx-auto font-semibold text-3xl">Triangle</h2>
+            <p class="text-center text-lg ">Area (A) = 0.5 x b x h</p>
+            <div class="flex items-center mx-auto">
+                <input id="triangle-base" type="text" placeholder="b" class="input w-16 max-w-xs bg-slate-200" />
+                <p class="pl-2 pr-2">cm</p>
+                <input id="triangle-height" type="text" placeholder="h" class="input w-16 max-w-xs bg-slate-200" />
+                <p class="pl-2">cm</p>
+            </div>
+            <button id="triangle-btn" class="btn bg-slate-200 w-full text-xl border-red-500 text-black normal-case ">Calculate</button>
+        </div>
+    </div> 
+ </section>
+</main>
 <script src="./index.js"></script>
 </body>
 </html>
