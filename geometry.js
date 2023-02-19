@@ -1,4 +1,3 @@
-
 // change color on mouseHover
 function mouseOver() {
     const cards = document.getElementsByClassName( 'card' );
@@ -95,3 +94,4 @@ function ellipseCalc() {
     const area = Math.PI * parseFloat( values.equationFirstValue ) * parseFloat( values.equationSecondValue );
     areaCalc(area, values.cardTitle);
 }
+
